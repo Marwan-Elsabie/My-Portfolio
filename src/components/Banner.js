@@ -67,7 +67,7 @@ security. With a strong work ethic and adaptability, I am prepared to tackle new
 field of computer engineering.</p>
                   
                   <HashLink to="#connect" smooth>
-                    <button>Let’s Connect <ArrowRightCircle size={25} /></button>
+                    <button>Let's Connect <ArrowRightCircle size={25} /></button>
                   </HashLink>
               </div>}
             </TrackVisibility>

@@ -27,7 +27,7 @@ export const Contact = () => {
     e.preventDefault();
     setButtonText("Sending...");
     try {
-      // Sending all form data as JSON including the message and personal info
+      
       let response = await fetch("http://localhost:5000/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json;charset=utf-8" },
@@ -36,7 +36,7 @@ export const Contact = () => {
       let result = await response.json();
       if (result.code === 200) {
         setStatus({ success: true, message: 'Message sent successfully' });
-        setFormDetails(formInitialDetails); // Reset form after success
+        setFormDetails(formInitialDetails); 
       } else {
         throw new Error('Failed to send message');
       }
